@@ -2,12 +2,12 @@ Summary:	DevHelp book: cvs
 Summary(pl):	Ksi±¿ka do DevHelpa o cvs
 Name:		devhelp-book-cvs
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.devhelp.net/books/books/cvs.tar.gz
 URL:		http://www.devhelp.net/
-Requires:	devhelp
+Requires:	devhelp >= 0.5.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,9 +24,9 @@ Ksi±¿ka do DevHelpa o cvs.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_prefix}/{books/cvs,specs}
+install -d $RPM_BUILD_ROOT%{_prefix}/books/cvs
 
-install book.devhelp $RPM_BUILD_ROOT%{_prefix}/specs/cvs.devhelp
+install book.devhelp $RPM_BUILD_ROOT%{_prefix}/books/cvs/cvs.devhelp
 install book/* $RPM_BUILD_ROOT%{_prefix}/books/cvs
 
 %clean
@@ -35,4 +35,3 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(644,root,root,755)
 %{_prefix}/books/*
-%{_prefix}/specs/*
