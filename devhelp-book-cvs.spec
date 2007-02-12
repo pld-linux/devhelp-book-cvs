@@ -1,5 +1,5 @@
 Summary:	DevHelp book: cvs
-Summary(pl.UTF-8):   Książka do DevHelpa o cvs
+Summary(pl.UTF-8):	Książka do DevHelpa o cvs
 Name:		devhelp-book-cvs
 Version:	1.0
 Release:	2
