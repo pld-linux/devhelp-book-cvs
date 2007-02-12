@@ -1,5 +1,5 @@
 Summary:	DevHelp book: cvs
-Summary(pl):	Ksi±¿ka do DevHelpa o cvs
+Summary(pl.UTF-8):   KsiÄ…Å¼ka do DevHelpa o cvs
 Name:		devhelp-book-cvs
 Version:	1.0
 Release:	2
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 DevHelp book about cvs.
 
-%description -l pl
-Ksi±¿ka do DevHelpa o cvs.
+%description -l pl.UTF-8
+KsiÄ…Å¼ka do DevHelpa o cvs.
 
 %prep
 %setup -q -c -n cvs
